@@ -1,0 +1,403 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+ h2, h5 {
+    color:black;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+ }
+
+
+img {
+    max-width: 100%;
+}
+
+/* Navbar */
+.navbar {
+    padding: 15px;
+    background-color:red;
+}
+.nav-item{
+    color:white;
+    font-weight: bold;;
+    font-size: 20px;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-nav .nav-link {
+    color:green;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+.card-title{
+    color:#333;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+/* Showcase Section with Transform Effect */
+.showcase-area {
+    height: 100vh;
+    color: #fff;
+    background-image: url('https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=800'); 
+    background-size: cover;
+    background-position: center;
+    transition: transform 5s ease-in-out; 
+}
+
+/* Text Transform Styling */
+.transform-text {
+    transition: transform 0.5s ease-in-out, color 0.5s ease-in-out; /* Smooth transition for text */
+}
+
+/* Hover Effects */
+.showcase-area:hover {
+    transform: scale(1.05); /* Slight zoom-in on the section */
+}
+
+.showcase-area:hover .transform-text {
+    transform: translateY(-10px); /* Slight upward movement for the text */
+    color: peachpuff; /* Change color on hover */
+}
+
+
+/* About Section */
+#about .img-fluid {
+    transition: transform 0.3s ease; /* Smooth transition */
+    transform-origin: center; /* Center point for transformations */
+}
+
+/* Scale up and add slight rotation on hover */
+#about .img-fluid:hover {
+    transform: scale(1.05) rotate(3deg); /* Slight scale and rotate */
+}
+
+#about h2 {
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+    transform: translateX(-10px); /* Initial position with slight offset */
+}
+
+#about h2:hover {
+    transform: translateX(0); /* Bring title back to its original position on hover */
+}
+
+#about p {
+    transition: transform 0.3s ease;
+    transform: translateY(10px); /* Initial position with slight downward offset */
+}
+
+#about p:hover {
+    transform: translateY(0); /* Bring paragraph back to its original position on hover */
+}
+
+
+/* Category Section */
+#category {
+    text-align: center;
+}
+
+#category h2 {
+    color: #007bff;
+    margin-bottom: 40px;
+}
+
+.card {
+    border: none;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    border-radius: 5px;
+}
+.card-img-top{
+    width:100%;
+    height:100%;
+}
+/*explore menu*/
+.explore-menu-section {
+    background-color: solid black;
+    
+  }
+  .menu-section-heading {
+    color: #183b56;
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .menu-item-image {
+    border-radius: 16px;
+  }
+  .menu-card-title {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 24px;
+  }
+
+  .menu-item-card {
+    border-radius: 16px;
+    
+  }
+/* Testimonials Section */
+/* Testimonials Section */
+#testimonials {
+    background:  url('https://images.pexels.com/photos/2104558/pexels-photo-2104558.jpeg?auto=compress&cs=tinysrgb&w=800');
+    background-size: cover;
+    background-position: center;
+    padding: 60px ;
+    color: #fff;
+    
+}
+
+/* Overlay to darken the background slightly */
+#testimonials::before {
+    content: '';
+    
+    
+}
+
+/* Testimonial items container */
+.carousel-item {
+    text-align: center;
+    
+}
+
+/* Individual Testimonial Box Styling */
+.testimonial {
+    background: transparent; 
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+   
+    transition: all 0.3s ease;
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.testimonial:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.testimonial img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border: 4px; 
+    
+}
+
+.testimonial p {
+    font-style: italic;
+    font-size: 20px;
+}
+
+.testimonial h5 {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Carousel Control Arrows Styling */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #ff7e5f; /* Change to match testimonial gradient on hover */
+    transition: background-color 0.3s ease;
+}
+
+
+    #testimonials {
+        padding: 40px ;
+    }
+
+    
+
+    .testimonial img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+    }
+
+    .testimonial p {
+        font-size: 14px;
+    }
+
+   
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    
+    
+
+
+   
+
+        
+/* Footer */
+footer {
+    text-align: center;
+    padding: 14px;
+    background-color: #333;
+    color: #fff;
+    font-size: 12px;
+}
+
+footer h2 {
+    margin-top: 0;
+}
+
+    .container {
+        padding: 0 1rem;
+    }
+
+
+/* Style for navbar items */
+.navbar a {
+    color: #2a9d8f; /* Set the default color for navbar items */
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+/* Hover effect for navbar items */
+.navbar a:hover {
+    color: #e63946; /* Change the color when hovering over the navbar items */
+    text-decoration: underline; /* Optional: add underline on hover */
+}
+
+/* Footer Section */
+#footer {
+    background: linear-gradient(135deg, #5f92ff, #fe7b7b); /* Gradient background */
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.footer-container {
+    
+    margin-bottom: 20px;
+}
+
+/* About Us Section */
+.footer-about {
+    margin-right: 10px;
+    padding: 20px;
+}
+
+.footer-about h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-about p {
+    font-size: 16px;
+}
+
+/* Quick Links Section */
+.footer-links {
+   
+    margin-right: 20px;
+    padding: 20px;
+}
+
+.footer-links h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff7e5f;
+}
+
+/* Social Media Section */
+.footer-social {
+    
+    padding: 20px;
+}
+
+.footer-social h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    font-size: 20px;
+    color: #fff;
+    transition: color 0.3s ease;
+    padding:10px;
+}
+
+.social-icon:hover {
+    color: #ff7e5f;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 1rem;
+}
+
+
+
+
